@@ -1,0 +1,588 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Fraunces', serif;
+  width: 100%;
+  margin: 0px;
+  background-image: url("../images/fabric.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  /* background-color: #ebebeb; */
+}
+
+
+
+
+/* Typography CSS */
+a{
+  display: block;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0px;
+  color: #3e80aa;
+}
+
+h3 {
+  text-align:justify;
+  font-family: Kanit;
+  font-weight: 500;
+  font-size: 28px;
+  color: #636364;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #636364;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+}
+
+h6 {
+  font-family: 'Kanit';
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #3e80aa;
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 10px;
+  color:black;
+}
+ul {
+  margin-top: 0px;
+
+}
+li {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px;
+  margin-left: -20px;
+  margin-bottom: 5px;
+  color:black;
+}
+
+.sectionStart {
+  margin: 50px 5%;
+  margin-top: 150px;
+}
+
+
+
+
+/* Navigation CSS */
+
+#navBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+  margin: 0px;
+  height: 75px;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.9);
+  align-items: center;
+  padding-right: 15px;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+}
+
+#navigation {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation p {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  color: #636364;
+  transition: 0.3s;
+}
+
+#navigation a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #636364
+}
+
+#navigation p:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e80aa;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  margin-right: 5%;
+}
+
+.icons img {
+  margin: 15px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.carrot {
+  width: 30px;
+  cursor: pointer;
+}
+
+#upToTop {
+  width: 30px;
+  cursor: pointer;
+  position:fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+
+
+/* Hero Grid CSS */
+
+#heroGrid {
+  margin: 0px;
+  display: grid;
+  min-height: 500px;
+  height: 50vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: 
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA";
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("../images/whiteboard.jpg");
+  background-color: #a3a8bf81;
+  background-blend-mode: multiply;
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url("../images/screens.jpg");
+  background-color: #a3a8bf;
+  background-blend-mode: multiply;
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: linear-gradient(70deg, #3e80aa, #a3a8bf);
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#CTA h4 {
+  font-size: 28px;
+  transition: 0.3s;
+}
+#CTA h4:hover{
+  color: #d4d4d4;
+}
+
+#CTA img {
+  width: 30px;
+  padding: 10px;
+}
+
+#headline {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  right: -170px;
+  top: 160px;
+  z-index: 1;
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+}
+
+#headline p {
+  max-width: 375px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+  color: #636364;
+}
+
+
+
+
+
+/* Category Grid CSS */
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  grid-template-areas: 
+  "education education final"
+  "garden travel travel"
+  "health health food"
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+  align-content: end;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+}
+.categoryGridArea:hover {
+  color: #3e80aa;
+  box-shadow: 0px 0px 15px rgba(99,99,99,0.5);
+  transform: scale(1.01);
+}
+.categoryGridArea a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#test{
+  /* grid-area: travel; */
+  /* background-image: url("../images/card-travel.jpeg"); */
+}
+
+img {
+  /* display: block; */
+  /* width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 10px; */
+}
+
+#travel {
+  grid-area: travel;
+  background-image: url("../images/card-travel.jpeg");
+}
+
+#final {
+  grid-area: final;
+  background-image: url("../images/card-hike.jpeg");
+}
+
+#education {
+  grid-area: education;
+  background-image: url("../images/card-doe.jpg");
+}
+
+#garden {
+  grid-area: garden;
+  background-image: url("../images/card-horticare.jpg");
+}
+
+#health {
+  grid-area: health;
+  background-image: url("../images/card-family.jpg");
+}
+
+#food {
+  grid-area: food;
+  background-image: url("../images/card-food.png");
+}
+
+.heading {
+  background-color: rgba(255,255,255,0.9);
+  padding: 15px;
+  height: 25px;
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  color: black;
+}
+a .heading:hover{
+  color: #3e80aa;
+}
+
+
+
+/* About Section CSS */
+
+#aboutBack {
+  display: block;
+  height: 150%;
+  /* background-image: linear-gradient(70deg, #e3c28a73, #a3a8bf6c); */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#aboutSection {
+  margin: 0px 5%;
+  display: flex;
+  border-radius: 10px;
+  height: 50vh;
+  min-height: 600px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutBox {
+  background-image: url("../images/pencils.jpeg");
+  background-position:right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(255, 255, 255, 0.5);
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#aboutCopy {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  position: absolute;
+  left: 73%;
+  top: 60px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#aboutSkill {
+  display:flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+#vertScroll {
+  height: 375px;
+  width: 350px;  
+  overflow-y:scroll;
+}
+#vertScroll::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollHead{
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+.scrollIcon {
+  height: 20px;
+  margin-right: 8px;
+}
+
+#aboutGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "user content project toolbox";
+  grid-gap: 50px;
+  margin-bottom: 50px;
+ }
+
+.aboutGridCopy {
+   margin-bottom: 60px;
+ }
+
+
+
+
+
+/* Connect Section CSS */
+
+#connSection {
+  margin: 0px;
+  display: flex;
+  height: 35vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  margin: 0px 5%;
+  height: 170px;
+}
+
+.blockquote {
+  font-size: 44px;
+  font-weight: 400;
+  color: #3e80aa;
+}
+
+.author {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  color: #3e80aa;
+  margin-right: 50px;
+}
+
+#connCopy {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+#links {
+  margin-right: 5%;
+  text-align: right;
+}
+
+#links a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #636364
+}
+
+#links h5:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e80aa;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #6363648c;
+  display: flex;
+  height: 75px;
+  background-image: url("../images/fabric.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-blend-mode:multiply;
+
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 1150px) {
+  #aboutSection {
+    flex-wrap: wrap;
+    display: block;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  #aboutSkill {
+    margin-top: 70px;
+  }
+
+  #aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    grid-template-areas: 
+    "user content"
+    "project toolbox"
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  #navigation {
+    width: 100%;
+  }
+
+  .icons{
+    display: none;
+  }
+
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+
+  #heroGrid {
+    grid-template-areas: 
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA"
+  }
+
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "education"
+    "final"
+    "garden"
+    "travel"
+    "health"
+    "food"
+  }
+
+  #aboutCopy {
+    left: 70px;
+  }
+
+  #quote {
+    margin-bottom: 50px;
+  }
+
+  #connSection {
+    flex-wrap: wrap;
+    display: block;
+    height: auto;
+  }
+
+  #links {
+    margin-top: 70px;
+  }
+}

@@ -1,18 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="css/index.css" type="text/css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Portfolio Homepage</title>
+
 </head>
+
+
 <body>
 
-  <div id="column" class="flex"><!-- This div has the id of column and the class of flex. -->
 
+<!-- Navigation -->
+
+<nav id="navBar">
+    
+    <div id="navigation">
+      <a class="navLink" href="#home"><p>home</p></a>
+      <a class="navLink" href="#case"><p>case studies</p></a>
+      <a class="navLink" href="#about"><p>about</p></a>
+      <a class="navLink" href="#connect"><p>connect</p></a>
+    </div>
+
+    <div class="icons">
+      <a href="https://reasonandrhyme.co" target="_blank"><img src="images/DT-comm-web-gray50.svg"></a>
+      <a href="mailto:dorothytoth@me.com"><img src="images/DT-comm-email-gray50.svg"></a>
+      <a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><img src="images/DT-comm-linkedin-gray50.svg"></a>
+    </div>
+    
+</nav>
+
+<a class="navLink" href="#home"><img id="upToTop" src="images/DT-carrot-grayUp50.svg"></a>
+
+<!-- Hero Grid -->
+
+<div id="home">
+  <section id="heroGrid">
+
+    <div id="featuredProduct" class="heroGridArea">
+      <div id="headline">
+        <h3>UX/UI Portfolio</h3>
+        <h2>Dorothy Toth</h2>
+        <p>Creative Director + UX/UI + Visual Designer</p>
+      </div>
+    </div>
+
+    <div id="secondaryProduct" class="heroGridArea"></div>
+
+    <div id="CTA" class="heroGridArea">
+      <a class="navLink" href="#case"><h4>see work</h4></a>
+      <img src="images/DT-carrot-white70.svg">
+    </div>
+    
+  </section>
+</div>
+
+
+
+
+<!-- Case Studies -->
+
+<div class="sectionStart" id="case">
+    <h3>UX/UI case studies</h3>
+</div>
+
+<section id="categoryGrid">
+
+
+  <!-- <a id="test" href="files/CS-GoTogether-Mobile-App.pdf" target="_blank">
+    <div id="travel" class="categoryGridArea">
+      <img src="../images/card-travel.jpeg"/>
+      <div class="heading">GoTogether</div>
+    </div>
+  </a> -->
+    <div id="travel" class="categoryGridArea">
+      <a href="files/CS-GoTogether-Mobile-App.pdf" target="_blank"><div class="heading">GoTogether</div></a>
+    </div>
+    <div id="education" class="categoryGridArea">
+      <a href="files/CS-Dept-of-Ed-Website-Redesign.pdf" target="_blank"><div class="heading">Department of Education</div></a>
+    </div>
+    <div id="garden" class="categoryGridArea">
+      <a href="files/CS-Horticare-Garden-Care-Mobile-App.pdf" target="_blank"><div class="heading">Horticare</div></a>
+    </div>
+    <div id="health" class="categoryGridArea">
+      <a href="files/CS-SCFMN-Website-Redesign.pdf" target="_blank"><div class="heading">Sickle Cell Foundation</div></a>
+    </div>
+    <div id="food" class="categoryGridArea">
+      <div class="heading">Coming Soon: Pantry</div>
+    </div>
+    <div id="final" class="categoryGridArea">
+      <div class="heading">Coming Soon: Final Project</div>
+    </div>
+
+</section>
+
+
+
+
+<!-- About -->
+
+<div id="aboutBack">
+
+<div class="sectionStart" id="about"></div>
+
+<div>
+<!-- includes aboutSection AND aboutGrid -->
+
+<div id="aboutSection">
+
+<div class="aboutBox">
+  <div id="aboutCopy">
+    <h3>about me</h3>
+    <p>As a dynamic, independent creative director, I pride myself in providing smart, meaningful, and unique design that solves problems and adds value. With over twenty years of experience in both the advertising and educational publishing industries, I am grateful to share my passion and expertise as a user champion, creative partner, and brand expert.</p>
   </div>
+</div>
 
-  <div id="row" class="flex">
-
-
+<div id="aboutSkill">
+  <span>
+    <div id="scrollHead">
+      <img class="scrollIcon" src="images/DT-carrot-grayDown50.svg">
+      <h6>scroll skill set</h6>
+    </div>
+  <div id="vertScroll">
+    <h5>Empathy</h5>
+    <h5>A/B Testing</h5>
+    <h5>Affinity Diagrams</h5>
+    <h5>Card Sorting</h5>
+    <h5>Task Analysis</h5>
+    <h5>User Interview Planning</h5>
+    <h5>User Interviews</h5>
+    <h5>Usability Testing</h5>
+    <h5>Copywriting</h5>
+    <h5>Information Architecture</h5>
+    <h5>Creativity</h5>
+    <h5>Collaboration</h5>
+    <h5>Site Mapping</h5>
+    <h5>Wireframing</h5>
+    <h5>HTML</h5>
+    <h5>CSS</h5>
+    <h5>Bootstrap</h5>
+    <h5>Page Layout</h5>
+    <h5>Mockups</h5>
+    <h5>Prototyping</h5>
+    <h5>Sketching</h5>
+    <h5>UI Design</h5>
+    <h5>Branding</h5>
+    <h5>Color Theory</h5>
+    <h5>Gestalt Principles</h5>
+    <h5>Icon Design</h5>
+    <h5>Infographics</h5>
+    <h5>Data Visualization</h5>
+    <h5>Layout Design</h5>
+    <h5>Typography</h5>
+    <h5>Project Management</h5>
   </div>
+  </span>
+</div>
+
+</div>
+
+
+<div id="aboutGrid">
+
+<div class="aboutGridCopy" id="user">
+  <h6>user empathy + user flows</h6>
+  <p>I encompass and understand user goals for all projects in order to create deliverables that provide exceptional user experience, information discovery, and delight.</p>
+</div>
+<div class="aboutGridCopy" id="content">
+  <h6>content + user interface design</h6>
+  <p>With strong organizational skills, I build information architecture and navigation designed to serve, then use creative content and layouts to bring messaging to life.</p><p>Beautifully crafted, branded, and comprehensive UI give the user a complete experience.</p>
+</div>
+<div class="aboutGridCopy" id="project">
+  <h6>project management + collaboration</h6>
+  <p>Following all aspects of a project keep expectations and deadlines met.</p><p>Because each project is unique, I collaborate with industry experts to produce exceptional work while keeping direction aligned and deliverables cohesive.</p>
+</div>
+<div class="aboutGridCopy" id="toolbox">
+  <h6>toolbox</h6>
+  <ul>
+    <li>Listening
+    <li>Good ol’ Pencil & Paper</li>
+    <li>Adobe Creative Cloud: XD, Illustrator, InDesign, Photoshop</li>
+    <li>Figma + Figjam</li>
+    <li>Jira + Trello</li>
+    <li>Miro</li>
+  </ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Connect -->
+
+<div class="sectionStart" id="connect"></div>
+
+<div id="quote">
+  <div class="blockquote">“Beauty is the harmony of purpose and form.”</div>
+  <div class="author">— Alvar Aalto</div>
+</div>
+
+<section id="connSection">
+
+  <div id="connCopy">
+    <h3>let’s work together</h3>
+    <p>For forward-thinking and purpose-driven creative and ux/ui design, please reach out to me. I’d love to hear about your passion and collaborate with you on your next endeavor.</p>
+  </div>
+  <div id="links">
+    <a href="https://reasonandrhyme.co" target="_blank"><h5>Website</h5></a>
+    <a href="mailto:dorothytoth@me.com"><h5>Email</h5></a>
+    <a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><h5>LinkedIn</h5></a>
+    <a href="https://drive.google.com/file/d/1Y6q6Zz-T6l7ZNx2BhY8wsSAg--y6fgcK/view?usp=sharing" target="_blank"><h5>Resume</h5></a>
+  </div>  
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+
+<div class="footer"></div>
+
+
+
+
+
+
+
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>
