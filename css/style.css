@@ -257,7 +257,7 @@ li {
   grid-gap: 60px;
   grid-template-areas: 
   "education final"
-  "garden travel"
+  "travel garden"
   "health food"
 }
 
@@ -660,6 +660,11 @@ img:hover{
     height: 400px;
   }
 
+  .aboutBox{
+    height: 300px;
+    width: 300px;
+  
+  }
   #aboutCopy {
     left: 70px;
   }
